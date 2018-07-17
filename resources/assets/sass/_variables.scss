@@ -1,0 +1,24 @@
+// Colours
+$brand-primary: rgb(39,158,188);
+
+$grey-black:    hsl(0, 0%, 21%);
+$grey-dark:     hsl(0, 0%, 29%);
+$grey-mid:      hsl(0, 0%, 71%);
+$grey-light:    hsl(0, 0%, 86%);
+$grey-lighter:  hsl(0, 0%, 96%);
+
+$seperation:           -22;
+$alert-low:            hsl(85, 80%, 55%);
+$alert-moderate:       adjust-hue($alert-low, $seperation);
+$alert-substantial:    adjust-hue($alert-moderate, $seperation);
+$alert-severe:         adjust-hue($alert-substantial, $seperation);
+$alert-critical:       adjust-hue($alert-severe, $seperation);
+
+$election-gen:     rgb(68,122,28);
+$election-lgv:     rgb(53, 113, 130);
+$election-scp:     rgb(80,7,120);
+$election-nia:     rgb(84, 123, 189);
+$election-naw:     rgb(216, 9, 121);
+$election-lma:     rgb(238, 38, 109);
+$election-pcc:     rgb(45, 178, 190);
+$election-ref:     rgb(151, 149, 16);

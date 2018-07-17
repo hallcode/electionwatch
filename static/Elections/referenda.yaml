@@ -1,0 +1,5 @@
+_id: ref
+name: Referendum
+order: 10
+isWatched: true
+description: A referendum is a vote on a question decided by the government. It can be on any topic, and can apply to the whole UK or just one of it's countries or areas. We only monitor the chance of a referendum happening to the whole UK.

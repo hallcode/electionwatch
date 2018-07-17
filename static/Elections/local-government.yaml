@@ -1,0 +1,11 @@
+_id: lgv
+name: Local Govnerment
+order: 90
+isWatched: false
+details:
+  Frequency: Various
+  Geography: England & Wales
+  Eligability:
+    - Over 18
+    - British Citizen or EU National
+---

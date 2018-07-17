@@ -1,0 +1,110 @@
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-gap: 1.33rem;
+
+    margin-bottom: 2rem;
+  
+    .election-date {
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+  
+      &:hover {
+        .type {
+          background-color: darken($grey-lighter, 6%);
+        }
+        .date, .year {
+          background-color: darken($grey-lighter, 4.5%);
+        }
+      }
+  
+      &:first-child {
+        margin-left: 0;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      p {
+        margin: 0;
+      }
+  
+      > * {
+        padding:1rem;
+      }
+  
+      .type {
+        border-top: 3px solid darken($brand-primary, 10%);
+        border-bottom: 2px dashed $grey-mid;
+        color: darken($brand-primary, 10%);
+        padding: 0.44rem 1rem;
+        background-color: darken($grey-lighter, 3%);
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+        &.gen {
+          border-top: 3px solid $election-gen;
+          color: $election-gen;
+        }
+  
+        &.lgv {
+          border-top: 3px solid $election-lgv;
+          color: $election-lgv;
+        }
+  
+        &.scp {
+          border-top: 3px solid $election-scp;
+          color: $election-scp;
+        }
+  
+        &.nia {
+          border-top: 3px solid $election-nia;
+          color: $election-nia;
+        }
+  
+        &.naw {
+          border-top: 3px solid $election-naw;
+          color: $election-naw;
+        }
+  
+        &.lma {
+          border-top: 3px solid $election-lma;
+          color: $election-lma;
+        }
+  
+        &.pcc {
+          border-top: 3px solid $election-pcc;
+          color: $election-pcc;
+        }
+  
+        &.ref {
+          border-top: 3px solid $election-ref;
+          color: $election-ref;
+        }
+      }
+
+      .date {
+        font-size: 23pt;
+        background-color: darken($grey-lighter, 1.5%);
+        padding: 1rem 1rem 0.18rem 1rem;
+      }
+  
+      .year {
+        font-size: 32pt;
+        background-color: darken($grey-lighter, 1.5%);
+        color: lighten(#000, 33%);
+        padding: 1.2rem 1rem;
+      }
+
+      .date + .year {
+        padding-top: 0;
+        padding-bottom: 1rem;
+        font-size: 14pt;
+      }
+    }
+  }
