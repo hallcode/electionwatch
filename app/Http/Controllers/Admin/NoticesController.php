@@ -88,7 +88,7 @@ class NoticesController extends Controller
         // Set notice direction
         $election = Election::where('_id', $request->input('election'))->first();
         $newLevel = Level::open($request->input('level'));
-        if ($election !== null)
+        if ($election->activeNotice() !== null)
         {
             if ($election->activeNotice()->level()->order > $newLevel->order)
             {
